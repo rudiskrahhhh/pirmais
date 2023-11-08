@@ -1,59 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html> 
+<head>
     <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse:collapse;
-        }
-    </style>
-    <head>
+       table, th, td {
+         border: 1px solid black;
+         border-collapse:collapse;
+       }
+       body {
+         background-image:url("data:image/jpeg;base64,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");
+       }
+       .container {
+         background-color:rgb(177, 7, 41);
+       }
+       p.dashed {
+        border-style: dashed;
+       }
+       ol.solid {
+        border-style: solid;
+       }
+        </style>
         <title>Michael Jeffrey Jordan</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-        <div class="container text-center">
-            <div class="row align-items-center">
-              <div class="col">
+</head>
 
-        <img src="https://a.espncdn.com/photo/2013/0209/nba_jordan_35.jpg" alt="Michael Jordan" style="width:300px;height:500px">
+<body>
+    <div class="container">
+     <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-3">
+
+          <img src="https://a.espncdn.com/photo/2013/0209/nba_jordan_35.jpg" alt="Michael Jordan" style="width:300px;height:500px">
 
         </div>
-        <div class="col">
+    <div class="col-9">
 
         <h1 style="text-align:center;">Michael Jordan</h1>
 
         <h2 style="text-align:center;">Jeffrey</h2>
 
-        <p style="text-align:center;">Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman and former professional basketball player.<br>
-            His profile on the official National Basketball Association (NBA) website states that "by acclamation, Michael Jordan is the greatest basketball player of all time."</p>
-        </style>
-              </div>
+        <p style="text-align:center;" class="dashed">Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman and former professional basketball player.<br>
+        His profile on the official National Basketball Association (NBA) website states that "by acclamation, Michael Jordan is the greatest basketball player of all time."</p>
+    </style>
+        </div>
               
-              <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class="col">
-        <table class="table table-striped-columns">
-            <tr>
-                <td>Vai ir teksts?</td>
-                <td>Vai ir attēls?</td>
-                <td>Vai ir video?</td>
-            </tr>
-            <tr>
-                <td>Jā</td>
-                <td>Jā</td>
-                <td>Nē</td>
-            </tr>
+    <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col-8">
+             <table class="table table-dark table-hover">
+                <tr>
+                    <td>1988</td>
+                    <td>1989</td>
+                    <td>1990</td>
+                    <td>1991</td>
+                    <td>1992</td>
+                    <td>1993</td>
+                    <td>1994</td>
+                    <td>1995</td>
+                    <td>1996</td>
+                    <td>1997</td>
+                    <td>1998</td>
+                </tr>
+                <tr>
+                    <td>MVP</td>
+                    <td>no MVP</td>
+                    <td>no MVP</td>
+                    <td>MVP</td>
+                    <td>MVP</td>
+                    <td>no MVP</td>
+                    <td>no MVP</td>
+                    <td>no MVP</td>
+                    <td>MVP</td>
+                    <td>no MVP</td>
+                    <td>MVP</td>
+                </tr>
+                <tr>
+                    <td>no FMVP</td>
+                    <td>no FMVP</td>
+                    <td>no FMVP</td>
+                    <td>FMVP</td>
+                    <td>FMVP</td>
+                    <td>FMVP</td>
+                    <td>no FMVP</td>
+                    <td>no FMVP</td>
+                    <td>FMVP</td>
+                    <td>FMVP</td>
+                    <td>FMVP</td>
+                </tr>
         </table>
+            </div>
 
-              </div>
-<div class="col">
-    <a href="https://rag.lv/">Rīgas Angļu ģimnāzija</a>
+          <div class="col-4">
+             <a href="https://rag.lv/">Rīgas Angļu ģimnāzija</a>
 
 
-<h2>championship years</h2>
-        <ol>
+    <h2>Championship years</h2>
+        <ol class="solid">
             <li><b>1991</b></li>
             <li>1992</li>
             <li><i>1993</i></li>
@@ -67,6 +109,5 @@
             <li><i>1998</i></li>
         </ol>
     </div>      
-</div>
-    </body>
+</body>
 </html>
