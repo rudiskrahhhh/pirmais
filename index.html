@@ -18,24 +18,23 @@
        ol.solid {
         border-style: solid;
        }
-       #radassaturs {
-        display: none;
+       #RadamaisSaturs {
+        display:none;
        }
         </style>
         <title>Michael Jeffrey Jordan</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
         <script>
-
-          function raditsaturu() {
-              document.getElementbyId("radassaturs").style.display = "block";
-              document.getElementbyId("Pogaradit").style.display = "none";
+          function raditSaturu() {
+            document.getElementById("RadamaisSaturs").style.display = "block";
+            document.getElementById("Pogaradit").style.display = "none";
           }
-          function paslepsaturu() {
-             document.getElementbyId("radassaturs").style.display = "none";
-             document.getElementbyId("Pogaradit").style.display = "block";
+          function pasleptSaturu() {
+            document.getElementById("RadamaisSaturs").style.display = "none";
+            document.getElementById("Pogaradit").style.display = "block";
           }
-          
         </script>
 </head>
 
@@ -55,12 +54,13 @@
         <h2 style="text-align:center;">Jeffrey</h2>
 
         <p style="text-align:center;" class="dashed">Michael Jeffrey Jordan (born February 17, 1963), also known by his initials MJ, is an American businessman and former professional basketball player.</p>
-        <button id="Pogaradit" onclick="raditsaturu()">Read more</button>
-          <div id="radassaturs">
+
+<button id="Pogaradit" onclick="raditSaturu()">Read more</button>
+  <div id="RadamaisSaturs">
+
         <p>His profile on the official National Basketball Association (NBA) website states that "by acclamation, Michael Jordan is the greatest basketball player of all time."</p>
-      <button onclick="paslepsaturu()">Minimize</button>
-    </div>
-    </style>
+<button onclick="pasleptSaturu()">Less</button>
+      </div>
         </div>
               
     <div class="container text-center">
